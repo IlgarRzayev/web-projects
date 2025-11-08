@@ -1,0 +1,488 @@
+@media (max-width: 480px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    .navbar a {
+        font-size: 24px;
+        margin: 20px 0;
+        color: var(--white);
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-close {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 36px;
+        color: white;
+    }
+
+    .navbar.active {
+        transform: translateX(0);
+    }
+
+    .navbar.active ~ .menu-close {
+        display: block;
+    }
+
+    .navbar.active ~ .menu-toggle {
+        display: none;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .header .container {
+        flex-direction: column;
+        padding: 1rem 5%;
+    }
+
+    .header .container .logo {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .header .container .contact-info {
+        font-size: 18px;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .header .hero {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header .hero .hero-content {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .header .hero .hero-content h1 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .header .hero .hero-content p {
+        font-size: 16px;
+        width: 300px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .header .hero .hero-content .cta-button {
+        width: 200px;
+        height: 60px;
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 150px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .header .hero .hero-image {
+        margin-left: 0;
+        width: 200px;
+        margin-top: -50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header .hero .hero-image img {
+        margin-left: 0;
+        margin-bottom: 200px;
+    }
+
+    .hero::before {
+        width: 300px;
+        height: 300px;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about .container {
+        padding: 20px 10px;
+    }
+
+    .about .container .title {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about .container .title .description,
+    .about .container .title span {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .about .stats {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .about .stat-item {
+        margin: 10px 0;
+    }
+
+    .about .stat-item h2 {
+        text-align: center;
+        font-family: Jost;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 86.7px;
+    }
+
+    .about .stat-item p {
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: center;
+    }
+
+    .promise .container {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .promise .container h2 {
+        font-family: Jost;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+        height: 84px;
+    }
+
+    .promise .container .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promise .container .stats h4,
+    .promise .container .stats p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .promise .stat-item h4 span {
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .promise .container .stats p {
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: center;
+    }
+
+    .swiper {
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .swiper .swiper-container {
+        padding: 20px 10px;
+    }
+
+    .swiper .swiper-container .heading {
+        width: 100%;
+        height: 84px;
+        font-family: Jost;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .swiper .swiper-container .swiper-slide {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .swiper .team-member {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .swiper .team-member img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .swiper .team-member h3 {
+        font-size: 20px;
+    }
+
+    .swiper .team-member p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .swiper .more-info {
+        width: auto;
+        font-size: 16px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .swiper .direction {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper .direction .right, 
+    .swiper .direction .left {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .modal .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .modal .modal-content .modal-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .modal .modal-content .modal-header .modal-img {
+        width: 120px;
+        height: auto;
+    }
+
+    .modal .modal-content .modal-header h2 {
+        font-size: 20px;
+    }
+
+    .modal .modal-content .modal-header p {
+        font-size: 16px;
+    }
+
+    .modal .modal-body h3 {
+        font-size: 20px;
+    }
+
+    .modal .modal-body p {
+        font-size: 16px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .tab-link {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .pricing .pricing-section {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .pricing .pricing-section h1 {
+        font-family: Jost;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-left: 0;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .pricing .pricing-section .pricing-cards {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .pricing .pricing-section .pricing-cards .card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-shadow: none;
+        border: none;
+        text-align: center;
+    }
+
+    .pricing .pricing-section .pricing-cards .card h2 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+
+    .pricing .pricing-section .pricing-cards .card .price {
+        font-size: 36px;
+        line-height: 40px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .pricing .pricing-section .pricing-cards .card .description {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    .pricing .pricing-section .pricing-cards .card button {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .pricing .pricing-section .pricing-cards .card:hover {
+        background-color: var(--blue);
+        transform: scale(1);
+        transition: background-color 0.3s ease;
+    }
+
+    .pricing .pricing-section .pricing-cards .card:hover button {
+        transform: none;
+    }
+
+    .pricing .pricing-section .pricing-cards .card:hover h2,
+    .pricing .pricing-section .pricing-cards .card:hover .price,
+    .pricing .pricing-section .pricing-cards .card:hover .description {
+        color: white;
+    }
+
+    .footer-section {
+        margin-top: 600px;
+    }
+
+    .footer-section {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .discount-section {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .discount-text {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .discount-text h2 {
+        font-size: 24px;
+        line-height: 32px;
+        width: auto;
+    }
+
+    .discount-text p {
+        font-size: 16px;
+        line-height: 24px;
+        width: auto;
+    }
+
+    .discount-form {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .discount-form form {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .discount-form input {
+        width: 100%;
+        height: 50px;
+    }
+
+    .discount-form button {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .footer-left {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-left .logo {
+        font-size: 24px;
+        width: auto;
+    }
+
+    .footer-left .description {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .footer-right {
+        text-align: center;
+        font-size: 24px;
+        width: auto;
+    }
+
+    .footer-right:hover {
+        color: var(--red);
+    }
+}

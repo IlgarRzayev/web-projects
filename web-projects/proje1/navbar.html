@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar-body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cyberlaw-navbar {
+            background: #0b0e4a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        .cyberlaw-navbar-brand {
+            text-decoration: none;
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            margin-right: auto; /* Pushes the brand to the left */
+        }
+
+        .cyberlaw-btn-contact {
+            background-color: #0D9CE8; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            padding: 10px 20px;
+            margin-right: 20px; /* Adds space between the button and the toggle */
+        }
+
+        .cyberlaw-btn-contact:hover {
+            background-color: #1C86EE;
+        }
+
+        .navbar-toggler {
+            border-color: #fff;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .cyberlaw-nav a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.36px;
+            text-align: left;
+        }
+
+        .cyberlaw-nav a:hover {
+            color: #0D9CE8; 
+        }
+    </style>
+</head>
+<body class="navbar-body">
+    <nav class="navbar cyberlaw-navbar navbar-expand-lg">
+        <a class="cyberlaw-navbar-brand" href="#">Cyberlaw</a>
+        <a class="cyberlaw-btn-contact" href="communicate.php">Bizimlə əlaqə</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto cyberlaw-nav">
+                <li class="nav-item"><a class="nav-link" href="main_page.php">Əsas Səhifə</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.php">Haqqımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="corporate_principles.php">Korporativ prinsiplər</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.php">Xidmətlər</a></li>
+                <li class="nav-item"><a class="nav-link" href="communicate.php">Əlaqə</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

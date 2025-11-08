@@ -1,0 +1,676 @@
+/* For large screens (desktop) with a width of 991px or more */
+@media (max-width: 991px) {
+    .photo-up, .photo-down{
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        background-image: none; 
+    }
+
+    .container {
+        padding: 10px;
+    }
+    
+    .header {
+        height: auto; /* Adjust height for responsiveness */
+    }
+    
+    .logo {
+        margin-left: 50px;
+    }
+    
+    .header .navbar .address {
+        margin-left: 200px;
+    }
+
+    .header .hero-section {
+        margin-left: 50px;
+        width: auto;
+        padding: 0 30px;
+    }
+
+    .header .hero-section h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .header .hero-section p {
+        font-size: 20px;
+        line-height: 30px;
+        width: auto;
+    }
+
+    .header .hero-section .btn {
+        width: 200px;
+        height: 70px;
+    }
+
+    .header .hero-section .hero-action .hero-text {
+        width: auto;
+    }
+
+    .catalog {
+        width: 100%;
+        padding: 0 20px; /* Kenar boşlukları için padding ekleyin */
+    }
+
+    .catalog .box-container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: repeat(2, 1fr); /* 2 sütun */
+        gap: 20px; /* Kutu aralarındaki boşluk */
+    }
+
+    .catalog .box-container .box {
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        padding: 10px;
+    }
+
+    .photo {
+        padding: 20px 0; /* Üstten ve alttan boşluk */
+    }
+
+    
+
+    .photo .container {
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        margin: 0 auto; /* Ortala */
+        padding: 0 20px; /* Kenarlardan boşluk */
+    }
+
+    .photo .container .content {
+        width: 100%;
+        margin: 0 auto; /* Ortala */
+        text-align: center; /* Yazıları ortala */
+    }
+
+    .photo .container .content h2 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 10px;
+    }
+
+    .photo .container .content p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    .photo .container .content .btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+
+    .about .container {
+        height: auto; /* Yükseklik otomatik */
+        padding: 20px; /* İçerikten boşluk */
+    }
+
+    .about .container .about-content {
+        width: 100%;
+        margin-left: 0; /* Soldan boşluk kaldır */
+        margin-right: 0; /* Sağdan boşluk kaldır */
+    }
+
+    .about .container .about-content h2 {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center; /* Başlığı ortala */
+        width: 100%;
+    }
+
+    .about .container .about-content .list {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about .container .about-content .list .item {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    .about .container .about-content .btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .about .container .woman-photo {
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        margin-right: 0; /* Sağdan boşluk kaldır */
+        background-size: cover; /* Fotoğrafın kaplamasını sağla */
+        background-position: center; /* Fotoğrafı ortala */
+        background-repeat: no-repeat; /* Fotoğrafın tekrarlanmamasını sağla */
+    }
+
+    .about .container .woman-photo .about-woman {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .about .container .woman-photo .about-woman .name {
+        width: 100%;
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .about .container .woman-photo .about-woman .profession {
+        width: 100%;
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .about .container .woman-photo {
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        background-image: none; /* Arka plan fotoğrafını kaldır */
+    }
+
+    .reviews .reviews-slider {
+        width: 100%;
+        padding: 50px 20px; /* Paddingi azalt */
+        margin: 100px auto; /* Merkezi hizalama */
+    }
+
+    .reviews .reviews-slider .box {
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        padding: 20px;
+        flex-direction: column; /* İçerikleri dikey hizala */
+    }
+
+    .reviews .reviews-slider .box .swiper-content,
+    .reviews .reviews-slider .box .swiper-user {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .reviews .reviews-slider .direction {
+        width: 100%;
+        justify-content: center; /* Butonları ortala */
+        margin-top: 20px;
+    }
+
+    .reviews .reviews-slider .direction .swiper-button-next,
+    .reviews .reviews-slider .direction .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+    }
+
+    .products .products-title {
+        font-size: 36px;
+        line-height: 48px;
+      }
+    
+      .products .description {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    
+      .products .list .item {
+        flex: 1 1 calc(50% - 20px); /* Her item ekran genişliğine göre %50 yer kaplayacak */
+        max-width: 500px;
+      }
+    
+      .footer .container .contact {
+        width: 100%;
+        padding: 40px;
+      }
+    
+      .footer .container .contact .footer-title {
+        font-size: 28px;
+        width: 100%;
+      }
+    
+      .footer .container .contact .footer-description {
+        font-size: 18px;
+        width: 100%;
+      }
+    
+      .footer__tel {
+        width: 100%;
+        flex-direction: column;
+      }
+    
+      .footer__button {
+        width: 100%;
+      }
+    
+      .footer .container .lists {
+        width: 100%;
+      }
+}
+
+/* For tablets with a width of 768px or less */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px; /* Add some padding for better spacing */
+    }
+
+    .header .navbar {
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+        text-align: center;
+        font-size: 24px; /* Adjust logo size for better visibility */
+    }
+
+    .header .navbar .address {
+        margin-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header .contact {
+        margin-right: 0;
+        text-align: center;
+        font-size: 16px; /* Adjust contact font size */
+    }
+
+    .header .hero-section {
+        margin-left: 0;
+        padding: 0 15px;
+        width: 100%; /* Make the hero section take full width */
+        text-align: center;
+    }
+
+    .header .hero-section h1 {
+        font-size: 30px; /* Slightly reduce the heading size */
+        line-height: 40px;
+        margin-bottom: 20px; /* Add some space below the heading */
+    }
+
+    .header .hero-section p {
+        font-size: 18px;
+        line-height: 26px;
+        width: auto;
+        margin-bottom: 20px; /* Add spacing between paragraph and button */
+    }
+
+    .header .hero-section .btn {
+        width: 80%; /* Button takes 80% of the screen width */
+        height: 60px;
+        font-size: 16px; /* Slightly increase button font size */
+    }
+
+    .header .hero-section .hero-action .hero-text {
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 10px;
+    }
+
+    .catalog .box-container {
+        grid-template-columns: 1fr; /* Tek sütun */
+    }
+
+    .catalog .box-container .box {
+        height: auto; /* Yükseklik otomatik */
+    }
+    .photo .photo-up {
+        height: 120px; /* Kısıtlı yükseklik */
+        background-image: none; /* Arka plan fotoğrafını kaldır */
+    }
+
+    .photo .container {
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        padding: 0 15px; /* Kenarlardan boşluk */
+    }
+
+    .photo .container .content {
+        text-align: center; /* Yazıları ortala */
+    }
+
+    .photo .container .content h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .photo .container .content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .photo .container .content .btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+
+    .about .container .about-content h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .about .container .about-content .list .item {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .about .container .about-content .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .about .container .woman-photo .about-woman .name {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .about .container .woman-photo .about-woman .profession {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .about .container .woman-photo {
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        background-image: none; /* Arka plan fotoğrafını kaldır */
+    }
+
+    .reviews .reviews-slider {
+        padding: 40px 15px; /* Paddingi azalt */
+    }
+
+    .reviews .reviews-slider .box {
+        padding: 10px;
+    }
+
+    .reviews .reviews-slider .direction {
+        width: 100%;
+        justify-content: center; /* Butonları ortala */
+    }
+
+    .reviews .reviews-slider .direction .swiper-button-next,
+    .reviews .reviews-slider .direction .swiper-button-prev {
+        width: 45px;
+        height: 45px;
+    }
+
+    .products .products-title {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    
+      .products .description {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    
+      .products .list {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .products .list .item {
+        width: 90%;
+        max-width: 400px;
+      }
+    
+      .footer .container .contact {
+        padding: 30px;
+      }
+    
+      .footer__button {
+        width: 90%;
+        height: 70px;
+      }
+    
+      .footer__tel-inner .input-reset {
+        width: 100%;
+        padding-left: 45px;
+      }
+    
+      .footer .container .lists {
+        width: 90%;
+      }
+    
+      .footer .container .lists .list {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
+/* For mobile screens with a width of 450px or less */
+@media (max-width: 450px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .logo {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .header .navbar .address {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header .contact {
+        margin-right: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .header .hero-section {
+        margin: 0;
+        padding: 0 10px;
+        width: auto;
+        text-align: center; /* Center the entire hero section */
+    }
+
+    .header .hero-section h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .header .hero-section p {
+        font-size: 16px;
+        line-height: 24px;
+        width: auto;
+    }
+
+    .header .hero-section .btn {
+        width: 100%; /* Button will take the full width of the screen */
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .header .hero-section .hero-action .hero-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .catalog .box-container {
+        grid-template-columns: 1fr; /* Tek sütun */
+        gap: 10px; /* Kutu aralarındaki boşluk */
+    }
+
+    .photo .photo-up {
+        height: 80px; /* Kısıtlı yükseklik */
+        background-image: none; /* Arka plan fotoğrafını kaldır */
+    }
+
+    .photo .container {
+        width: 100%;
+        padding: 0 10px; /* Kenarlardan boşluk */
+    }
+
+    .photo .container .content {
+        text-align: center; /* Yazıları ortala */
+    }
+
+    .photo .container .content h2 {
+        font-size: 24px;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .photo .container .content p {
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+    }
+
+    .photo .container .content .btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .about .container {
+        padding: 10px; /* İçerikten boşluk */
+        
+    }
+
+    .about .container .about-content {
+        width: 100%;
+        padding: 0 10px; /* Kenarlardan boşluk */
+    }
+
+    .about .container .about-content h2 {
+        font-size: 24px;
+        line-height: 30px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .about .container .about-content .list{
+        margin-top: -50px;
+    }
+
+    .about .container .about-content .list .item {
+        font-size: 12px;
+        line-height: 18px;
+        width: 300px;
+    }
+
+    .about .container .about-content .btn {
+        font-size: 22px;
+        padding: 8px;
+        align-items: center;
+    }
+
+    .about .container .woman-photo {
+        width: 100%;
+        height: auto; /* Yükseklik otomatik */
+        background-image: none; /* Arka plan fotoğrafını kaldır */
+    }
+
+    .about .container .woman-photo .about-woman .name {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+
+    .about .container .woman-photo .about-woman .profession {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .reviews .reviews-slider {
+        padding: 20px;
+        width: 400px;
+    }
+
+    .reviews .reviews-slider .box {
+        padding: 5px;
+    }
+
+    .reviews .reviews-slider .box .swiper-text{
+        width: 400px;
+        text-align: center;
+
+    }
+
+    .reviews .reviews-slider .direction {
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .reviews .reviews-slider .direction .swiper-button-next,
+    .reviews .reviews-slider .direction .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reviews .photo-down {
+        background-image: none; /* Arka plan fotoğrafını kaldır */
+
+    }
+
+    .products {
+        padding: 20px 0;
+      }
+    
+      .products .products-title {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    
+      .products .description {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    
+      .products .list .item {
+        width: 100%;
+        max-width: 100%;
+      }
+    
+      .footer {
+        height: auto;
+      }
+    
+      .footer .container .contact {
+        padding: 20px;
+      }
+    
+      .footer__button {
+        width: 100%;
+        height: 60px;
+      }
+    
+      .footer__tel-inner .input-reset {
+        height: 60px;
+      }
+    
+      .footer__tel-inner i {
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    
+      .footer .container .lists {
+        width: 100%;
+      }
+    
+      .footer .container .lists .list {
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+      }
+    
+      .footer .container .lists .copyright {
+        width: 100%;
+        font-size: 10px;
+      }
+}
